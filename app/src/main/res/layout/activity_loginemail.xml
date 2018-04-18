@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/firebase" />
+
+                <ProgressBar
+                    android:id="@+id/pgLoading"
+                    android:layout_marginTop="110dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:text="Sign in with Email" />
+
+            <TextView
+                android:layout_below="@id/txtTitle"
+                android:id="@+id/txtSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Authenticate action register and login with Firebase service."
+                android:gravity="center"
+                android:textSize="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <EditText
+                        android:id="@+id/edtUsername"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan Username or Email"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textColorHint="@android:color/white" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Masukkan Password"
+                        android:inputType="textPassword"
+                        android:textColor="#000000"
+                        android:textColorHint="@android:color/white" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnSignIn"
+                    android:backgroundTint="#7bb36b"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Sign In"
+                    android:textColor="#ffff"/>
+
+                <Button
+                    android:id="@+id/btnSignUp"
+                    android:backgroundTint="#3a9ec6"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="I Don't have an Account, Sign Up Now!"
+                    android:textColor="#ffff"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</ScrollView>

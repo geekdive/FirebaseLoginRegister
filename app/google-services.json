@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "940875916466",
+    "firebase_url": "https://project-autentikasi-user.firebaseio.com",
+    "project_id": "project-autentikasi-user",
+    "storage_bucket": "project-autentikasi-user.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940875916466:android:0eccee2fa9682cd5",
+        "android_client_info": {
+          "package_name": "apps.auth.septiyadii.firebaseloginregister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940875916466-pvb5ov3uahgqhgki7123oe6g43vmd527.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "apps.auth.septiyadii.firebaseloginregister",
+            "certificate_hash": "2eb59dfddda89bc2b199c5e4bcd143cf4860f15c"
+          }
+        },
+        {
+          "client_id": "940875916466-kclb46qa7v43bfrqdt86e7p2njm9qego.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "apps.auth.septiyadii.firebaseloginregister",
+            "certificate_hash": "897edee1b2bb0723a2e458cc11e3aa71c03218d4"
+          }
+        },
+        {
+          "client_id": "940875916466-441miij6ip6i18m9a1jd96f438i3veqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA35PJIGUAcmtNsMlYtGF0MmQCprM1QqgU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940875916466-441miij6ip6i18m9a1jd96f438i3veqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

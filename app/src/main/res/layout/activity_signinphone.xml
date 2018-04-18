@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcf1f1">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/firebase" />
+
+                <ProgressBar
+                    android:id="@+id/pgLoading"
+                    android:layout_marginTop="110dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:text="Sign in with Email" />
+
+            <TextView
+                android:layout_below="@id/txtTitle"
+                android:id="@+id/txtSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Authenticate action register and login with Firebase service."
+                android:gravity="center"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:id="@+id/txtStatus"
+                android:text="Status"
+                android:fadeScrollbars="true"
+                android:maxLines="5"
+                android:scrollbars="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtDetail"
+                android:text="Detail ID"
+                android:fadeScrollbars="true"
+                android:maxLines="5"
+                android:scrollbars="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/groupLine1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtKodeNegara"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:hint="+62" />
+
+                    <EditText
+                        android:textSize="17sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtNomorTelp"
+                        android:textColor="#000"
+                        android:inputType="number"
+                        android:hint="Put your number phone here!"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/kdVerifikasi"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="monospace"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Put Code Verification"/>
+
+                <Button
+                    android:id="@+id/btnKirimKode"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="289dp"
+                    android:layout_height="50dp"
+                    android:text="Sent Verified Code"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#50dfc0"
+                    android:textColor="#ffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnVerifikasiNomor"
+                    android:layout_width="289dp"
+                    android:layout_height="50dp"
+                    android:text="Verify with Code"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#f5c172"
+                    android:textColor="#ffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnSentCodeAgain"
+                    android:layout_width="289dp"
+                    android:layout_height="50dp"
+                    android:text="Sent Verified Code Again!"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#df8450"
+                    android:textColor="#ffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/groupLine2"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnSignOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Sign Out"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#525c58"
+                    android:textColor="#ffff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</ScrollView>

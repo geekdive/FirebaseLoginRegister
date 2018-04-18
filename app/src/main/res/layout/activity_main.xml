@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f2f2"
+    android:paddingLeft="38dp"
+    android:paddingRight="38dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/ivFirebaseAuth"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:src="@drawable/firebase"/>
+
+        <TextView
+            android:layout_below="@id/ivFirebaseAuth"
+            android:id="@+id/txtTitle"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Firebase Authentication"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_below="@id/txtTitle"
+            android:id="@+id/txtSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Authenticate action register and login with Firebase service."
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:textSize="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/layButton"
+            android:layout_below="@id/txtSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:backgroundTint="#ffff"
+                android:layout_width="290dp"
+                android:layout_height="67dp"
+                android:textAllCaps="false"
+                android:textColor="#2b83ff"
+                android:textSize="19sp"
+                android:paddingLeft="27dp"
+                android:textStyle="bold"
+                android:gravity="right|center"
+                android:paddingRight="25dp"
+                android:drawableLeft="@drawable/btngoogle"
+                android:text="Sign in with Google"/>
+
+            <Button
+                android:id="@+id/btnEmail"
+                android:layout_below="@id/btnGoogle"
+                android:backgroundTint="#f21b1b"
+                android:layout_width="290dp"
+                android:layout_height="67dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:textColor="#fff"
+                android:paddingLeft="27dp"
+                android:gravity="right|center"
+                android:paddingRight="25dp"
+                android:drawableLeft="@drawable/btnemail"
+                android:text="Sign in with Email"/>
+
+            <Button
+                android:id="@+id/btnPhone"
+                android:layout_below="@id/btnEmail"
+                android:backgroundTint="#7ed7fa"
+                android:layout_width="290dp"
+                android:layout_height="67dp"
+                android:textAllCaps="false"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:paddingLeft="27dp"
+                android:gravity="right|center"
+                android:paddingRight="25dp"
+                android:drawableLeft="@drawable/btnphone"
+                android:text="Sign in with Phone"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
